@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Gallery – John Smith</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-container, .gallery-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    .login-container input {
+      padding: 0.5rem;
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="login" class="login-container">
+    <h2>Enter Gallery Password</h2>
+    <input type="password" id="password" placeholder="Password" />
+    <br />
+    <button onclick="checkPassword()">Enter</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <div id="gallery" class="gallery-container hidden">
+    <h2>John Smith – Senior Photos</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Photo 1">
+      <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Photo 2">
+      <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Photo 3">
+      <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Photo 4">
+    </div>
+  </div>
+
+  <script>
+    const correctPassword = "john2025";
+
+    function checkPassword() {
+      const entered = document.getElementById("password").value;
+      const error = document.getElementById("error");
+      if (entered === correctPassword) {
+        document.getElementById("login").classList.add("hidden");
+        document.getElementById("gallery").classList.remove("hidden");
+      } else {
+        error.textContent = "Incorrect password. Please try again.";
+      }
+    }
+  </script>
+
+</body>
+</html>
