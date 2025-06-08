@@ -1,0 +1,18 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f7f1;
+  color: #2e2e2e;
+}
+
+header, footer {
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+
+a {
+  color: #8a5c2e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
