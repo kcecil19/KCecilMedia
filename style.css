@@ -1,38 +1,54 @@
+:root {
+  --bg-color: #eef2f5;
+  --text-color: #2e2e2e;
+  --header-footer-bg: #1f305e;
+  --header-footer-text: #ffffff;
+  --accent-color: #3d7aed;
+  --accent-hover: #2a5cb8;
+  --button-radius: 6px;
+  --section-padding-vertical: 40px;
+  --section-padding-horizontal: 20px;
+}
+
 body {
   font-family: 'Georgia', serif;
-  background-color: #f9f7f1;
-  color: #2e2e2e;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
 }
 
-header, footer {
-  background-color: #3b3b3b;
-  color: #ffffff;
+header {
+  text-align: center;
+  padding: calc(var(--section-padding-vertical) * 1.5) var(--section-padding-horizontal);
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
 }
 
-a {
-  color: #8a5c2e;
-  text-decoration: none;
+footer {
+  text-align: center;
+  padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
 }
-a:hover {
-  text-decoration: underline;
-}.button {
+
+.button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #8a5c2e;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: var(--button-radius);
   margin-top: 10px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #734c26;
+  background-color: var(--accent-hover);
 }
 
 section {
-  margin: 40px 20px;
+  padding: var(--section-padding-vertical) var(--section-padding-horizontal);
 }
 
 h1, h2 {
@@ -42,5 +58,5 @@ h1, h2 {
 p {
   line-height: 1.6;
   max-width: 700px;
+  margin: 0 auto 20px;
 }
-
