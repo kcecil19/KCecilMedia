@@ -5,15 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>K. Cecil Media</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Navigation styling */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: var(--header-footer-text);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .header-content {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .header-content h1,
+    .header-content p {
+      margin: 0 auto 10px;
+      max-width: 700px;
+    }
+    .header-content p {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <header style="text-align: center; padding: 60px 20px;">
-    <h1>Welcome to K. Cecil Media</h1>
-    <p>Capturing the energy of sports, the beauty of landscapes, and moments that matter.</p>
-    <a href="portfolio.html" class="button">View My Work</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery/john-smith-92gf7.html">Client Login</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Welcome to K. Cecil Media</h1>
+      <p>Capturing the energy of sports, the beauty of landscapes, and moments that matter.</p>
+      <a href="portfolio.html" class="button">View My Work</a>
+    </div>
   </header>
 
-  <footer style="text-align: center; padding: 30px 20px; background-color: #3b3b3b; color: white;">
+  <footer>
     <p>&copy; 2025 K. Cecil Media</p>
   </footer>
 </body>
