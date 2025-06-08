@@ -10,20 +10,47 @@
   --section-padding-horizontal: 20px;
 }
 
+/* Base page styles */
 body {
+  margin: 0;
   font-family: 'Georgia', serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin: 0;
 }
 
+/* Center header content and style */
 header {
   text-align: center;
   padding: calc(var(--section-padding-vertical) * 1.5) var(--section-padding-horizontal);
   background-color: var(--header-footer-bg);
   color: var(--header-footer-text);
 }
+header h1,
+header p {
+  margin: 0 auto 10px;
+  max-width: 700px;
+}
+header p {
+  text-align: center;
+}
 
+/* Button style */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: var(--header-footer-text);
+  text-decoration: none;
+  border-radius: var(--button-radius);
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Footer styles */
 footer {
   text-align: center;
   padding: var(--section-padding-vertical) var(--section-padding-horizontal);
@@ -31,30 +58,15 @@ footer {
   color: var(--header-footer-text);
 }
 
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: var(--button-radius);
-  margin-top: 10px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: var(--accent-hover);
-}
-
+/* Section spacing */
 section {
   padding: var(--section-padding-vertical) var(--section-padding-horizontal);
 }
 
+/* Headings and paragraphs spacing */
 h1, h2 {
   margin-bottom: 10px;
 }
-
 p {
   line-height: 1.6;
   max-width: 700px;
