@@ -15,4 +15,32 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8a5c2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
+.button:hover {
+  background-color: #734c26;
+}
+
+section {
+  margin: 40px 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 700px;
+}
+
