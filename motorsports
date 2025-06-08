@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorsports | K. Cecil Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery/john-smith-92gf7.html">Client Login</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Motorsports Photography</h1>
+      <p>High-speed moments captured at the track — adrenaline, focus, and pure motion.</p>
+    </div>
+  </header>
+
+  <section>
+    <p style="text-align: center; font-size: 1.2rem; padding: 60px;">
+      Motorsports gallery coming soon. Check back after my next event!
+    </p>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/kcecil.creatives" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/kyler.cecil.9" target="_blank">Facebook</a>
+      <a href="mailto:kylercecil11@gmail.com">Email</a>
+    </div>
+    <p>&copy; 2025 K. Cecil Media</p>
+  </footer>
+</body>
+</html>
