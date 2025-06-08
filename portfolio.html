@@ -1,74 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | K. Cecil Media</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Navigation styling */
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav a {
-      color: var(--header-footer-text);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    /* Header content identical to homepage */
-    .header-content {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .header-content h1,
-    .header-content p {
-      margin: 0 auto 10px;
-      max-width: 700px;
-    }
-    /* Portfolio grid */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .portfolio-block {
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-    }
-    .portfolio-block img {
-      width: 100%;
-      border-radius: 8px;
-      display: block;
-    }
-    .portfolio-block h2 {
-      margin-top: 8px;
-    }
-    /* Footer social links */
-    .social-links {
-      margin: 10px 0;
-    }
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: var(--header-footer-text);
-      font-weight: bold;
-    }
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -82,23 +18,33 @@
     </nav>
     <div class="header-content">
       <h1>My Portfolio</h1>
-      <p>Explore my work across motorsports, high school sports, and landscapes.</p>
+      <p>Explore categories of my work, including high school sports, landscapes, and more.</p>
     </div>
   </header>
 
-  <section>
-    <div class="portfolio-grid">
-      <a href="motorsports.html" class="portfolio-block">
-        <img src="https://via.placeholder.com/400x250?text=Motorsports" alt="Motorsports">
-        <h2>Motorsports</h2>
-      </a>
-      <a href="high-school-sports.html" class="portfolio-block">
+  <section class="portfolio-grid">
+    <div class="portfolio-block">
+      <a href="high-school-sports.html">
         <img src="https://via.placeholder.com/400x250?text=High+School+Sports" alt="High School Sports">
         <h2>High School Sports</h2>
       </a>
-      <a href="landscapes.html" class="portfolio-block">
+    </div>
+    <div class="portfolio-block">
+      <a href="landscapes.html">
         <img src="https://via.placeholder.com/400x250?text=Landscapes" alt="Landscapes">
         <h2>Landscapes</h2>
+      </a>
+    </div>
+    <div class="portfolio-block">
+      <a href="motorsports.html">
+        <img src="https://via.placeholder.com/400x250?text=Motorsports" alt="Motorsports">
+        <h2>Motorsports</h2>
+      </a>
+    </div>
+    <div class="portfolio-block">
+      <a href="nature.html">
+        <img src="https://via.placeholder.com/400x250?text=Nature" alt="Nature">
+        <h2>Nature</h2>
       </a>
     </div>
   </section>
