@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | K. Cecil Media</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f1ee;
+      color: #2a2a2a;
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul {
+      background-color: #264653;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 10px;
+      display: inline-block;
+    }
+    header nav ul li a:hover {
+      background-color: #e76f51;
+      border-radius: 5px;
+    }
+    .header-content h1 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      margin-top: 30px;
+    }
+    .portfolio-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      text-align: center;
+      padding: 20px;
+    }
+    .portfolio-card:hover {
+      transform: scale(1.03);
+    }
+    .portfolio-card a {
+      text-decoration: none;
+      color: #264653;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #264653;
+      color: white;
+    }
+    .social-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #e76f51;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,35 +94,22 @@
       </ul>
     </nav>
     <div class="header-content">
-      <h1>My Portfolio</h1>
-      <p>Explore categories of my work, including high school sports, landscapes, and more.</p>
+      <h1>Portfolio</h1>
     </div>
   </header>
 
-  <section class="portfolio-grid">
-    <div class="portfolio-block">
-      <a href="high-school-sports.html">
-        <img src="https://via.placeholder.com/400x250?text=High+School+Sports" alt="High School Sports">
-        <h2>High School Sports</h2>
-      </a>
+  <section class="portfolio-section">
+    <div class="portfolio-card">
+      <a href="sports.html">High School Sports</a>
     </div>
-    <div class="portfolio-block">
-      <a href="landscapes.html">
-        <img src="https://via.placeholder.com/400x250?text=Landscapes" alt="Landscapes">
-        <h2>Landscapes</h2>
-      </a>
+    <div class="portfolio-card">
+      <a href="landscapes.html">Landscapes</a>
     </div>
-    <div class="portfolio-block">
-      <a href="motorsports.html">
-        <img src="https://via.placeholder.com/400x250?text=Motorsports" alt="Motorsports">
-        <h2>Motorsports</h2>
-      </a>
+    <div class="portfolio-card">
+      <a href="nature.html">Nature & Wildlife</a>
     </div>
-    <div class="portfolio-block">
-      <a href="nature.html">
-        <img src="https://via.placeholder.com/400x250?text=Nature" alt="Nature">
-        <h2>Nature</h2>
-      </a>
+    <div class="portfolio-card">
+      <a href="motorsports.html">Motorsports (Coming Soon)</a>
     </div>
   </section>
 
