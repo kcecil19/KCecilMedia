@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | K. Cecil Media</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
-    /* Navigation styling */
-    nav ul {
+    body {
+      background-color: #f4f1ee;
+      color: #2a2a2a;
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul {
+      background-color: #264653;
       list-style: none;
       padding: 0;
       margin: 0;
@@ -15,60 +24,64 @@
       justify-content: center;
       gap: 20px;
     }
-    nav a {
-      color: var(--header-footer-text);
+    header nav ul li a {
+      color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 10px;
+      display: inline-block;
     }
-    nav a:hover {
-      text-decoration: underline;
+    header nav ul li a:hover {
+      background-color: #e76f51;
+      border-radius: 5px;
     }
-    /* Header section */
     .header-content {
       text-align: center;
-      padding: 60px 20px;
-    }
-    .header-content h1,
-    .header-content p {
-      margin: 0 auto 10px;
-      max-width: 700px;
-    }
-    /* Contact form styling */
-    .contact-form {
-      max-width: 600px;
-      margin: 40px auto;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      margin-top: 40px;
       padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .contact-form label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
+    .header-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
+    .contact-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
     }
-    .contact-form button {
-      background: var(--accent-color);
-      color: #fff;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      font-weight: bold;
-      transition: background 0.3s ease;
+    .contact-section p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
     }
-    .contact-form button:hover {
-      background: var(--accent-hover);
+    .contact-section a {
+      display: inline-block;
+      margin: 10px;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #264653;
+      padding: 12px 20px;
+      border-radius: 5px;
+    }
+    .contact-section a:hover {
+      background-color: #e76f51;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #264653;
+      color: white;
+    }
+    .social-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #e76f51;
     }
   </style>
 </head>
@@ -84,27 +97,18 @@
       </ul>
     </nav>
     <div class="header-content">
-      <h1>Contact Me</h1>
-      <p>Have questions or want to book a session? Send me a message and I’ll get back to you soon.</p>
+      <h1>Contact</h1>
     </div>
   </header>
 
-  <section>
-    <form class="contact-form" action="mailto:kylercecil11@gmail.com" method="post" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+  <section class="contact-section">
+    <p>Have a question, want to book a session, or just want to connect? Reach out below:</p>
+    <a href="mailto:kylercecil11@gmail.com">Email Me</a>
+    <a href="https://instagram.com/kcecil.creatives" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/kyler.cecil.9" target="_blank">Facebook</a>
   </section>
 
- <footer>
+  <footer>
     <div class="social-links">
       <a href="https://instagram.com/kcecil.creatives" target="_blank">Instagram</a>
       <a href="https://www.facebook.com/kyler.cecil.9" target="_blank">Facebook</a>
@@ -114,5 +118,3 @@
   </footer>
 </body>
 </html>
-
-
