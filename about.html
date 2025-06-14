@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me | K. Cecil Media</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | K. Cecil Media</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -22,42 +22,38 @@
       margin: 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      flex: 1 1 auto;
+      text-align: center;
     }
     header nav ul li a {
       color: #ffffff;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       padding: 15px 10px;
-      display: inline-block;
+      display: block;
     }
     header nav ul li a:hover {
       background-color: #e76f51;
       border-radius: 5px;
     }
-    .header-content h1 {
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      color: #264653;
-      margin-top: 30px;
-    }
     .about-section {
+      padding: 60px 20px;
       max-width: 800px;
       margin: 0 auto;
-      padding: 40px 20px;
-      font-size: 1.1rem;
-      line-height: 1.6;
+      text-align: center;
     }
-    .about-section p:first-child {
-      font-weight: bold;
-      font-size: 1.25rem;
+    .about-section h1 {
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
     }
     .about-section p {
-      margin-bottom: 1.2em;
-    }
-    .about-section a {
-      font-weight: bold;
-      color: #e76f51;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      line-height: 1.6;
     }
     footer {
       text-align: center;
@@ -86,20 +82,16 @@
         <li><a href="gallery/john-smith-92gf7.html">Client Login</a></li>
       </ul>
     </nav>
-    <div class="header-content">
-      <h1>About Me</h1>
-    </div>
   </header>
 
-  <section class="about-section">
-    <p>Hi, I'm Kyler Cecil — the photographer behind K. Cecil Media.</p>
-
-    <p>Based in <strong>Pittsburgh, Pennsylvania</strong>, I specialize in capturing the excitement of high school and motorsports events, as well as the natural beauty of landscapes and wildlife. My goal is to freeze moments that tell a story — whether it's the intensity of a football game, the peaceful stillness of a morning field, or the adrenaline of a racetrack.</p>
-
-    <p>I’m continually growing my portfolio and expanding into new areas of photography. I created this site to showcase my work, book clients, and publish stories that support my passion for visual storytelling.</p>
-
-    <p>Thanks for visiting. Feel free to <a href="contact.html">reach out</a> with questions, booking inquiries, or collaboration ideas!</p>
-  </section>
+  <main>
+    <section class="about-section">
+      <h1>About Me</h1>
+      <p>
+        I'm Kyler Cecil, a Pittsburgh-based photographer capturing high school sports, landscapes, and the thrill of motorsports. My work is driven by a passion for storytelling through imagery — freezing moments that matter. Whether I'm behind the fence at a football game, exploring nature trails, or documenting the speed and energy of a racetrack, my goal is to deliver striking visuals with emotion and authenticity.
+      </p>
+    </section>
+  </main>
 
   <footer>
     <div class="social-links">
