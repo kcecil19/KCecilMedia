@@ -4,8 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me | K. Cecil Media</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
+    body {
+      background-color: #f4f1ee;
+      color: #2a2a2a;
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul {
+      background-color: #264653;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 10px;
+      display: inline-block;
+    }
+    header nav ul li a:hover {
+      background-color: #e76f51;
+      border-radius: 5px;
+    }
+    .header-content h1 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      margin-top: 30px;
+    }
     .about-section {
       max-width: 800px;
       margin: 0 auto;
@@ -22,7 +57,21 @@
     }
     .about-section a {
       font-weight: bold;
-      color: var(--accent-color);
+      color: #e76f51;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #264653;
+      color: white;
+    }
+    .social-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #e76f51;
     }
   </style>
 </head>
@@ -43,7 +92,7 @@
   </header>
 
   <section class="about-section">
-    <p>Hi, I'm Kyler Cecil.</p>
+    <p>Hi, I'm Kyler Cecil — the photographer behind K. Cecil Media.</p>
 
     <p>Based in <strong>Pittsburgh, Pennsylvania</strong>, I specialize in capturing the excitement of high school and motorsports events, as well as the natural beauty of landscapes and wildlife. My goal is to freeze moments that tell a story — whether it's the intensity of a football game, the peaceful stillness of a morning field, or the adrenaline of a racetrack.</p>
 
