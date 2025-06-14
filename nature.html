@@ -3,8 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nature | K. Cecil Media</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Nature & Wildlife | K. Cecil Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f1ee;
+      color: #2a2a2a;
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul {
+      background-color: #264653;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 10px;
+      display: inline-block;
+    }
+    header nav ul li a:hover {
+      background-color: #e76f51;
+      border-radius: 5px;
+    }
+    .header-content h1 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      margin-top: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #264653;
+      color: white;
+    }
+    .social-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #e76f51;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,17 +82,15 @@
       </ul>
     </nav>
     <div class="header-content">
-      <h1>Nature Photography</h1>
-      <p>Capturing the quiet beauty of wildlife, flora, and natural elements in their purest form.</p>
+      <h1>Nature & Wildlife</h1>
     </div>
   </header>
 
-  <section class="portfolio-grid">
-    <img src="https://via.placeholder.com/400x250?text=Wildlife" alt="Wildlife">
-    <img src="https://via.placeholder.com/400x250?text=Macro+Flower" alt="Macro Flower">
-    <img src="https://via.placeholder.com/400x250?text=Butterfly" alt="Butterfly">
-    <img src="https://via.placeholder.com/400x250?text=Tree+Bark" alt="Tree Bark">
-    <img src="https://via.placeholder.com/400x250?text=Morning+Dew" alt="Morning Dew">
+  <section class="gallery">
+    <img src="images/nature1.jpg" alt="Deer in the Woods">
+    <img src="images/nature2.jpg" alt="Bird in Flight">
+    <img src="images/nature3.jpg" alt="Sunlit Forest">
+    <img src="images/nature4.jpg" alt="Calm River">
   </section>
 
   <footer>
