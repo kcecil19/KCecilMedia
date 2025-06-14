@@ -4,7 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>High School Sports | K. Cecil Media</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f1ee;
+      color: #2a2a2a;
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul {
+      background-color: #264653;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 10px;
+      display: inline-block;
+    }
+    header nav ul li a:hover {
+      background-color: #e76f51;
+      border-radius: 5px;
+    }
+    .header-content h1 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      margin-top: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #264653;
+      color: white;
+    }
+    .social-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #e76f51;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,16 +82,15 @@
       </ul>
     </nav>
     <div class="header-content">
-      <h1>High School Sports Photography</h1>
-      <p>Capturing athletes in action — intensity, teamwork, and school pride across every game and match.</p>
+      <h1>High School Sports</h1>
     </div>
   </header>
 
-  <section class="portfolio-grid">
-    <img src="https://via.placeholder.com/400x250?text=Baseball" alt="Baseball">
-    <img src="https://via.placeholder.com/400x250?text=Football" alt="Football">
-    <img src="https://via.placeholder.com/400x250?text=Wrestling" alt="Wrestling">
-    <img src="https://via.placeholder.com/400x250?text=Hockey" alt="Hockey">
+  <section class="gallery">
+    <img src="images/sports1.jpg" alt="Football Action Shot">
+    <img src="images/sports2.jpg" alt="Wrestling Match">
+    <img src="images/sports3.jpg" alt="Baseball Pitcher">
+    <img src="images/sports4.jpg" alt="Hockey Game">
   </section>
 
   <footer>
