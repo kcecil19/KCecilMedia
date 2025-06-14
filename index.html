@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | K. Cecil Media</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,36 +22,35 @@
       margin: 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      flex: 1 1 auto;
+      text-align: center;
     }
     header nav ul li a {
       color: #ffffff;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       padding: 15px 10px;
-      display: inline-block;
+      display: block;
     }
     header nav ul li a:hover {
       background-color: #e76f51;
       border-radius: 5px;
     }
-    .header-content {
+    .hero {
+      padding: 60px 20px;
       text-align: center;
-      padding: 60px 20px 30px;
     }
-    .header-content h1 {
+    .hero h1 {
+      font-size: 2.5rem;
       font-family: 'Montserrat', sans-serif;
       color: #264653;
-      font-size: 2.5rem;
-      margin: 0;
     }
-    .header-content p {
+    .hero p {
       font-size: 1.2rem;
       margin-top: 10px;
-    }
-    .main-section {
-      text-align: center;
-      padding: 40px 20px;
     }
     footer {
       text-align: center;
@@ -80,15 +79,14 @@
         <li><a href="gallery/john-smith-92gf7.html">Client Login</a></li>
       </ul>
     </nav>
-    <div class="header-content">
-      <h1>K. Cecil Media</h1>
-      <p>Capturing the energy of sports, the beauty of landscapes, and moments that matter.</p>
-    </div>
   </header>
 
-  <section class="main-section">
-    <p>Welcome to my official photography portfolio. Whether you're here to explore moments frozen in time or looking to collaborate, you've come to the right place.</p>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Welcome to K. Cecil Media</h1>
+      <p>Capturing the energy of sports, the beauty of landscapes, and moments that matter.</p>
+    </section>
+  </main>
 
   <footer>
     <div class="social-links">
