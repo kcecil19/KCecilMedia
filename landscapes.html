@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landscapes | K. Cecil Media</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,24 +22,22 @@
       margin: 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      flex: 1 1 auto;
+      text-align: center;
     }
     header nav ul li a {
       color: #ffffff;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       padding: 15px 10px;
-      display: inline-block;
+      display: block;
     }
     header nav ul li a:hover {
       background-color: #e76f51;
       border-radius: 5px;
-    }
-    .header-content h1 {
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      color: #264653;
-      margin-top: 30px;
     }
     .gallery {
       display: grid;
@@ -53,6 +51,12 @@
       width: 100%;
       border-radius: 6px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header-content h1 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #264653;
+      margin-top: 30px;
     }
     footer {
       text-align: center;
@@ -87,10 +91,10 @@
   </header>
 
   <section class="gallery">
-    <img src="images/landscape1.jpg" alt="Mountain View">
-    <img src="images/landscape2.jpg" alt="Sunset Over Lake">
-    <img src="images/landscape3.jpg" alt="Foggy Forest">
-    <img src="images/landscape4.jpg" alt="Rolling Hills">
+    <img src="images/landscape1.jpg" alt="Landscape Photo 1">
+    <img src="images/landscape2.jpg" alt="Landscape Photo 2">
+    <img src="images/landscape3.jpg" alt="Landscape Photo 3">
+    <img src="images/landscape4.jpg" alt="Landscape Photo 4">
   </section>
 
   <footer>
