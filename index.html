@@ -40,17 +40,61 @@
       border-radius: 5px;
     }
     .hero {
-      padding: 60px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
     .hero h1 {
-      font-size: 2.5rem;
       font-family: 'Montserrat', sans-serif;
       color: #264653;
+      font-size: 2rem;
     }
     .hero p {
       font-size: 1.2rem;
-      margin-top: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .cta-buttons a {
+      background-color: #e76f51;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .cta-buttons a:hover {
+      background-color: #d1593f;
+    }
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .preview img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .about-snippet {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .about-snippet p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    .about-snippet a {
+      color: #e76f51;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -81,12 +125,25 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to K. Cecil Media</h1>
-      <p>Capturing the energy of sports, the beauty of landscapes, and moments that matter.</p>
-    </section>
-  </main>
+  <section class="hero">
+    <h1>Welcome to K. Cecil Media</h1>
+    <p>Capturing the energy of sports, the beauty of landscapes, and moments that matter.</p>
+    <div class="cta-buttons">
+      <a href="contact.html">Book a Session</a>
+      <a href="portfolio.html">View Portfolio</a>
+    </div>
+  </section>
+
+  <section class="preview">
+    <img src="images/nature-thumb.jpg" alt="Nature preview">
+    <img src="images/landscape-thumb.jpg" alt="Landscape preview">
+    <img src="images/sports-thumb.jpg" alt="High School Sports preview">
+  </section>
+
+  <section class="about-snippet">
+    <p>Based in Pittsburgh, I’m a passionate photographer focused on capturing compelling moments in sports, nature, and daily life.</p>
+    <a href="about.html">Learn more about me →</a>
+  </section>
 
   <footer>
     <div class="social-links">
